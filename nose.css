@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d1124; 
+    color: #ffffff;
+    padding: 20px;
+}
+
+
+#cabezera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121836;
+    padding: 15px 30px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.logo {
+    height: 100%;
+    width: 180px;
+}
+
+.links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.links a:hover {
+    color: #8ab4f8;
+}
+
+#contenedor-principal {
+    display: flex;
+    gap: 20px;
+}
+
+.fenomeno-estrella {
+    display: flex;
+    background-color: #18224c;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 2;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+
+#img1 img {
+    width: 200px;
+    max-width: 300px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#texto_fenomeno_prin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+#texto1 h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #ffffff;
+}
+
+#texto1 p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #d1d5db;
+    margin-bottom: 20px;
+}
+
+
+#link1 a, #link2 a, .fenómeno2 a {
+    display: inline-block;
+    background-color: #1a365d;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 13px;
+    text-align: center;
+    border: 1px solid #3182ce;
+    transition: background 0.3s;
+}
+
+#link1 a:hover, #link2 a:hover, .fenómeno2 a:hover {
+    background-color: #2b6cb0;
+}
+
+
+#otros-fenomenos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.fenómeno1, .fenómeno2 {
+    background-color: #18224c;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.fenómeno1 h2, .fenómeno2 h2 {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.fenómeno1 p, .fenómeno2 p {
+    font-size: 13px;
+    color: #d1d5db;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #cabezera {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .links a {
+        margin-left: 0;
+        font-size: 13px;
+    }
+
+    #contenedor-principal {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+
+    .fenomeno-estrella {
+        flex-direction: column;
+        padding: 0;
+        overflow: hidden;
+        background-color: transparent; 
+    }
+
+    #img1 {
+        width: 100%;
+    }
+
+    #img1 img {
+        max-width: 100%;
+        width: 100%;
+        height: 180px;
+        border-radius: 8px;
+    }
+
+
+    #texto_fenomeno_prin {
+        background-color: #1a2246;
+        padding: 20px 15px;
+        border-radius: 8px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    #texto1 h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #texto1 p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+
+    #otros-fenomenos {
+        gap: 15px;
+    }
+
+    .fenómeno1, .fenómeno2 {
+        background-color: #1a2246;
+        padding: 20px 15px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .fenómeno1 h2, .fenómeno2 h2 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .fenómeno1 p, .fenómeno2 p {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+
+    #link1 a, #link2 a, .fenómeno2 a {
+        width: 100%;
+        display: block;
+        padding: 12px 10px;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+}
